@@ -3,7 +3,6 @@ package br.com.harisson.tokenmanager.config;
 import br.com.harisson.coreproject.property.JwtConfiguration;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.cors.CorsConfiguration;
@@ -28,8 +27,7 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .authenticationEntryPoint((req, resp, e) -> resp.sendError(HttpServletResponse.SC_UNAUTHORIZED))
                 .and()
                 .authorizeRequests()
-                .antMatchers(jwtConfiguration.getLoginUrl(), "/**/swagger-ui.html").permitAll()
-                .antMatchers(HttpMethod.GET, "/**/swagger-resources/**", "/**/webjars/springfox-swagger-ui/**", "/**/v2/api-docs/**").permitAll()
+                .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
                 .antMatchers("/transactions/{accountId}").hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated();
     }

@@ -22,7 +22,18 @@ Execute o docker, abra o terminal em '.../bank-transactions-mapping' e execute o
 docker-compose up
 ```
 
-Feito isso você terá a aplicação rodando em **localhost:8080**
+Feito isso você terá a aplicação rodando em **http://localhost:8080**
+
+Assim que o projeto é executado, é inserido no banco de dados 4 usuários, são eles
+
+|   Username   |   Senha   |
+|:------------:|:----------|
+| admin        | root      |
+| Harisson     | harisson  |
+| William      | william   |
+| David        | david     |
+
+A autenticação é feita em **http://localhost:8080/login**
 
 ## 📰Mapeamento
 
