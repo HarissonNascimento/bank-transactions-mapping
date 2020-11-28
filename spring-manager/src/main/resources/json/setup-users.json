@@ -1,0 +1,30 @@
+[
+  {
+    "accountId": 2,
+    "password": "$2a$10$aYMVoqu.3nuQ3zLISYlvUea3vUSOKmKVVyuJaTTuSL99stUpAXMYe",
+    "role": "USER",
+    "userKey": "8a85867e6ad9e761016ada958bdf5b0f",
+    "username": "Harisson"
+  },
+  {
+    "accountId": 3,
+    "password": "$2a$10$YDviwKUw2raXbcRzIPANfuWwZQcTUrVoCTeMny5EFs0OvYs5YX/za",
+    "role": "USER",
+    "userKey": "8a8587fd6b0487a7016b07a1ecfb0b74",
+    "username": "William"
+  },
+  {
+    "accountId": 4,
+    "password": "$2a$10$kH1WdmJSKXIf.YwoXXv9purGh/GUPvk4AifL/cGxlKX1w32bsQ5L.",
+    "role": "USER",
+    "userKey": "8a8587b371776b9e01717d217e6e1492",
+    "username": "David"
+  },
+  {
+    "accountId": 1,
+    "password": "$2a$10$UgjhgtIqwOgNdnY0sBuF.OcDC0hkQm2a/RBd9/0Fdcae/FSKDarJK",
+    "role": "ADMIN",
+    "userKey": "0",
+    "username": "admin"
+  }
+]
